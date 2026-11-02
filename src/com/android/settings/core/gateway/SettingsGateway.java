@@ -224,6 +224,10 @@ import com.android.settings.wifi.tether.WifiTetherSettings;
 
 import com.miku.exsettings.MikuSettings;
 import com.miku.exsettings.fragments.SmartPixels;
+import com.miku.exsettings.fragments.PickedCutoutApps;
+import com.miku.exsettings.fragments.PickedFeatures;
+import com.miku.exsettings.fragments.PickedSleepMode;
+import com.miku.exsettings.fragments.PickedThanks;
 
 public class SettingsGateway {
 
@@ -416,6 +420,10 @@ public class SettingsGateway {
             UserAspectRatioDetails.class.getName(),
             MikuSettings.class.getName(),
             SmartPixels.class.getName(),
+            PickedFeatures.class.getName(),
+            PickedSleepMode.class.getName(),
+            PickedCutoutApps.class.getName(),
+            PickedThanks.class.getName(),
             ScreenTimeoutSettings.class.getName(),
             ResetNetwork.class.getName(),
             VibrationIntensitySettingsFragment.class.getName(),
@@ -487,5 +495,6 @@ public class SettingsGateway {
             Settings.ShadeSettingsActivity.class.getName(),
             Settings.MikuSettingsActivity.class.getName(),
             Settings.SmartPixelsActivity.class.getName(),
+            Settings.SleepModeActivity.class.getName(),
     };
 }

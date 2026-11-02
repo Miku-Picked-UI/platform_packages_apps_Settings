@@ -594,6 +594,8 @@ public class Settings extends SettingsActivity {
         }
     }
     public static class MikuSettingsActivity extends SettingsActivity {}
+    /** Miku-Picked UI: Sleep mode (Evolution X), opened from the SystemUI tile. */
+    public static class SleepModeActivity extends SettingsActivity { /* empty */ }
 
     /**
      * Activity for MediaControlsSettings

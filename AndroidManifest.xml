@@ -5799,6 +5799,16 @@
                 android:value="com.miku.exsettings.fragments.SmartPixels" />
         </activity>
 
+        <!-- Miku-Picked UI: Sleep mode (Evolution X), opened from the SystemUI tile -->
+        <activity android:name=".Settings$SleepModeActivity"
+            android:label="@string/picked_sleep_mode_title"
+            android:taskAffinity="com.android.settings"
+            android:exported="true"
+            android:parentActivityName="Settings">
+            <meta-data android:name="com.android.settings.FRAGMENT_CLASS"
+                android:value="com.miku.exsettings.fragments.PickedSleepMode" />
+        </activity>
+
         <!-- MikuSettings -->
         <activity android:name=".Settings$MikuSettingsActivity"
             android:label="@string/miku_settings_title"

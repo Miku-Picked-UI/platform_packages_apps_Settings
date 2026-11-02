@@ -72,6 +72,14 @@
             android:title="@string/legal_information"
             android:fragment="com.android.settings.LegalSettings"/>
 
+        <!-- Miku-Picked UI: Thanks to -->
+        <Preference
+            android:key="picked_thanks"
+            android:order="17"
+            android:title="@string/picked_thanks_title"
+            android:summary="@string/picked_thanks_summary"
+            android:fragment="com.miku.exsettings.fragments.PickedThanks"/>
+
         <!-- Regulatory labels -->
         <Preference
             android:key="regulatory_info"
