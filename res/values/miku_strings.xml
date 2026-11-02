@@ -42,8 +42,8 @@
     <string name="miku_type">❤Build type❤</string>
 
     <!-- Miku version -->
-    <string name="miku_version">Miku UI Ver.</string>
-    <string name="miku_version_uri" translatable="false">https://github.com/Miku-UI</string>
+    <string name="miku_version">Miku-Picked UI Ver.</string>
+    <string name="miku_version_uri" translatable="false">https://github.com/Miku-Picked-UI</string>
 
     <!-- SELinux Status -->
     <string name="selinux_status">SELinux status</string>
