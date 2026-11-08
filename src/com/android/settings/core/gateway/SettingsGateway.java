@@ -224,6 +224,7 @@ import com.android.settings.wifi.tether.WifiTetherSettings;
 
 import com.miku.exsettings.MikuSettings;
 import com.miku.exsettings.fragments.SmartPixels;
+import com.miku.exsettings.fragments.PickedClockStyles;
 import com.miku.exsettings.fragments.PickedCutoutApps;
 import com.miku.exsettings.fragments.PickedFeatures;
 import com.miku.exsettings.fragments.PickedSleepMode;
@@ -424,6 +425,7 @@ public class SettingsGateway {
             PickedSleepMode.class.getName(),
             PickedCutoutApps.class.getName(),
             PickedThanks.class.getName(),
+            PickedClockStyles.class.getName(),
             ScreenTimeoutSettings.class.getName(),
             ResetNetwork.class.getName(),
             VibrationIntensitySettingsFragment.class.getName(),
