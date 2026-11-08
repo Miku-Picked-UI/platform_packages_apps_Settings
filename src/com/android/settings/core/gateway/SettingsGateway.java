@@ -229,6 +229,7 @@ import com.miku.exsettings.fragments.PickedCutoutApps;
 import com.miku.exsettings.fragments.PickedFeatures;
 import com.miku.exsettings.fragments.PickedSleepMode;
 import com.miku.exsettings.fragments.PickedThanks;
+import com.miku.exsettings.fragments.PickedUdfpsIcons;
 
 public class SettingsGateway {
 
@@ -426,6 +427,7 @@ public class SettingsGateway {
             PickedCutoutApps.class.getName(),
             PickedThanks.class.getName(),
             PickedClockStyles.class.getName(),
+            PickedUdfpsIcons.class.getName(),
             ScreenTimeoutSettings.class.getName(),
             ResetNetwork.class.getName(),
             VibrationIntensitySettingsFragment.class.getName(),
