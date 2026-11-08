@@ -226,7 +226,6 @@ import com.miku.exsettings.MikuSettings;
 import com.miku.exsettings.fragments.SmartPixels;
 import com.miku.exsettings.fragments.PickedCutoutApps;
 import com.miku.exsettings.fragments.PickedFeatures;
-import com.miku.exsettings.fragments.PickedLunarisBar;
 import com.miku.exsettings.fragments.PickedSleepMode;
 import com.miku.exsettings.fragments.PickedThanks;
 
@@ -422,7 +421,6 @@ public class SettingsGateway {
             MikuSettings.class.getName(),
             SmartPixels.class.getName(),
             PickedFeatures.class.getName(),
-            PickedLunarisBar.class.getName(),
             PickedSleepMode.class.getName(),
             PickedCutoutApps.class.getName(),
             PickedThanks.class.getName(),
