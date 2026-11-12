@@ -227,6 +227,7 @@ import com.miku.exsettings.fragments.SmartPixels;
 import com.miku.exsettings.fragments.PickedClockStyles;
 import com.miku.exsettings.fragments.PickedCutoutApps;
 import com.miku.exsettings.fragments.PickedFeatures;
+import com.miku.exsettings.fragments.PickedScreenshotTester;
 import com.miku.exsettings.fragments.PickedSleepMode;
 import com.miku.exsettings.fragments.PickedThanks;
 import com.miku.exsettings.fragments.PickedUdfpsIcons;
@@ -424,6 +425,7 @@ public class SettingsGateway {
             SmartPixels.class.getName(),
             PickedFeatures.class.getName(),
             PickedSleepMode.class.getName(),
+            PickedScreenshotTester.class.getName(),
             PickedCutoutApps.class.getName(),
             PickedThanks.class.getName(),
             PickedClockStyles.class.getName(),
