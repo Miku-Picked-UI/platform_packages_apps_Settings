@@ -92,6 +92,9 @@ android_library {
         "android.hardware.dumpstate-V1-java",
         "android.hardware.dumpstate-V1.0-java",
         "android.hardware.dumpstate-V1.1-java",
+        // [Miku-Picked UI] Fast wireless charging and Wireless PowerShare (Picked features)
+        "vendor.lineage.health-V3-java",
+        "vendor.lineage.powershare-V1-java",
         "com_android_server_accessibility_flags_lib",
         "net-utils-framework-common",
         "notification_flags_lib",
