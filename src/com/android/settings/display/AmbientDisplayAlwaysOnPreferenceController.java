@@ -80,7 +80,9 @@ public class AmbientDisplayAlwaysOnPreferenceController extends TogglePreference
 
     @Override
     public boolean isChecked() {
-        return getConfig().alwaysOnEnabled(MY_USER);
+        // The screen-off fingerprint icon (Penguin Laboratory) also counts as AOD for the
+        // system; this switch is only AOD itself.
+        return getConfig().alwaysOnContentEnabled(MY_USER);
     }
 
     @Override

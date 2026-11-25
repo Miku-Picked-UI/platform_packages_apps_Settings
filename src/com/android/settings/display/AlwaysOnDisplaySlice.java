@@ -73,7 +73,7 @@ public class AlwaysOnDisplaySlice implements CustomSliceable {
 
         final PendingIntent toggleAction = getBroadcastIntent(mContext);
         @ColorInt final int color = Utils.getColorAccentDefaultColor(mContext);
-        final boolean isChecked = mConfig.alwaysOnEnabled(MY_USER);
+        final boolean isChecked = mConfig.alwaysOnContentEnabled(MY_USER);
 
         int title = R.string.doze_always_on_title;
         if (ambientAod()) {
