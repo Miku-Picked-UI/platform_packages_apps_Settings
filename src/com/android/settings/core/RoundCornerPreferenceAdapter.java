@@ -71,6 +71,10 @@ public class RoundCornerPreferenceAdapter extends PreferenceGroupAdapter {
     public void onBindViewHolder(@NonNull PreferenceViewHolder holder, int position) {
         super.onBindViewHolder(holder, position);
         updateBackground(holder, position);
+        // Miku-Picked UI: Glass Layer Settings cards (static glass: Settings' window is opaque).
+        com.android.internal.graphics.picked.GlassLayer.attach(holder.itemView,
+                com.android.internal.graphics.picked.GlassLayer.SETTINGS_CARDS, 0.55f,
+                com.android.internal.graphics.picked.GlassSurface.SEGMENTED);
     }
 
     protected @DrawableRes int getRoundCornerDrawableRes(int position, boolean isSelected) {
