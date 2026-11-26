@@ -28,11 +28,23 @@ class SystemUpdateRepository(context: Context) {
      * Finds a matching activity for the system update intent.
      */
     fun getSystemUpdateIntent(): Intent? {
+        // Miku-Picked UI: always our local updater. Play services also handles this action with
+        // the same priority, so resolving it gave the chooser (ResolverActivity) without the
+        // action, which opened nothing useful.
+        if (packageManager.resolveActivity(LOCAL_UPDATER, 0) != null) return Intent(LOCAL_UPDATER)
         val intent = Intent(Settings.ACTION_SYSTEM_UPDATE_SETTINGS)
         return packageManager.resolveActivity(intent, PackageManager.MATCH_SYSTEM_ONLY)
             ?.activityInfo
             ?.let { activityInfo ->
                 Intent().setClassName(activityInfo.packageName, activityInfo.name)
             }
+    }
+
+    private companion object {
+        val LOCAL_UPDATER: Intent =
+            Intent().setClassName(
+                "com.android.settings",
+                "com.android.settings.picked.SystemUpdateActivity",
+            )
     }
 }
