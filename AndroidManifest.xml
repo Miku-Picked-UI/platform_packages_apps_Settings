@@ -290,6 +290,25 @@
             </intent-filter>
         </activity>
 
+        <!-- [Miku-Picked UI] System update: install a ROM zip picked on the phone (recovery
+             flashes it); also offered for zips opened from a file manager -->
+        <activity android:name=".picked.SystemUpdateActivity"
+                  android:exported="true"
+                  android:label="@string/system_update_settings_list_item_title"
+                  android:theme="@style/Theme.SubSettings"
+                  android:taskAffinity="com.android.settings.root">
+            <intent-filter android:priority="1">
+                <action android:name="android.settings.SYSTEM_UPDATE_SETTINGS" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:scheme="content" />
+                <data android:mimeType="application/zip" />
+            </intent-filter>
+        </activity>
+
         <activity android:name=".Settings$CreateShortcutActivity"
                   android:exported="true"
                   android:label="@string/settings_shortcut">
